@@ -8,6 +8,9 @@ function App() {
       <header className="App-header">
         <h1>Weather Search</h1>
         <Search />
+      </header>
+      <footer>
+        {" "}
         <p>
           <a
             href="https://github.com/brodie96/weather-react-app"
@@ -19,7 +22,7 @@ function App() {
           <br />
           by Rebecca Brodie
         </p>
-      </header>
+      </footer>
     </div>
   );
 }
