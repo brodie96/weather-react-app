@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Temperature.css";
 
 export default function Temperature(props) {
   let city = props.city;
