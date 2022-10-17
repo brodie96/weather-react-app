@@ -10,7 +10,7 @@ function App() {
           <Search />
         </header>
 
-        <footer className="Footer">
+        <footer>
           {" "}
           <p>
             <a

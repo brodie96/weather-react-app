@@ -20,7 +20,7 @@
   background: var(--main-bg-color);
 }
 
-.Footer {
+.App footer {
   font-family: var(--main-font-family);
   color: var(--main-font-color);
   font-size: 10px;

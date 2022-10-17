@@ -22,6 +22,7 @@ export default function Search() {
           type="text"
           placeholder="City"
           className="SearchCity"
+          autoFocus="on"
           onChange={updateCity}
         />
         <input type="submit" value="Go!" className="GoButton" />
