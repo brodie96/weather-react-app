@@ -8,6 +8,7 @@ export default function Temperature(props) {
   let [description, setDescription] = useState(null);
   let [humidity, setHumidity] = useState(null);
   let [wind, setWind] = useState(null);
+
   let apiKey = "0bc997255f5a3bef3c5d47209c8da7d5";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -21,19 +22,28 @@ export default function Temperature(props) {
 
   if (temperature) {
     return (
-      <div>
-        <ul>
-          <li>Temperature: {temperature}ºC</li>
-          <li>Description: {description}</li>
-          <li>Humidity: {humidity}%</li>
-          <li>Wind Speed: {wind}km/h</li>
-          <li>
-            <img
-              alt="weather"
-              src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
-            />
-          </li>
-        </ul>
+      <div className="Weather">
+        <div className="row">
+          <div className="col-6">
+            <ul>
+              <li>Temperature: {temperature}ºC</li>
+              <li>Description: {description}</li>
+
+              <li>
+                <img
+                  alt="weather"
+                  src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+                />
+              </li>
+            </ul>
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>Humidity: {humidity}%</li>
+              <li>Wind Speed: {wind}km/h</li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   } else {

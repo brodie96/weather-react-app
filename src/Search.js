@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Search.css";
 import Temperature from "./Temperature";
 
 export default function Search() {
@@ -15,11 +16,15 @@ export default function Search() {
     setCity(event.target.value);
   }
   return (
-    <div>
+    <div className="Search">
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="City" onChange={updateCity} />
         <input type="submit" value="Search" />
       </form>
+      <h1>City, Country</h1>
+      <ul>
+        <li>Day, Time</li>
+      </ul>
       <h2>{weather}</h2>
     </div>
   );
