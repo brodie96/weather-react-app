@@ -1,3 +1,14 @@
+:root {
+  --main-bg-color: radial-gradient(
+    circle at 0.7% 1%,
+    rgb(215, 248, 247) 0%,
+    rgb(102, 188, 239) 100.2%
+  );
+  --main-font-color: #201749;
+  --secondary-font-color: #1e56a0;
+  --main-font-family: "Roboto Condensed", sans-serif;
+}
+
 .App {
   display: block;
   max-width: 600px;
@@ -6,9 +17,14 @@
   padding: 20px;
   border: 1px solid #201749;
   border-radius: 10px;
-  background: radial-gradient(
-    circle at 0.7% 1%,
-    rgb(215, 248, 247) 0%,
-    rgb(102, 188, 239) 100.2%
-  );
+  background: var(--main-bg-color);
+}
+
+.Footer {
+  font-family: var(--main-font-family);
+  color: var(--main-font-color);
+  font-size: 10px;
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
 }

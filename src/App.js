@@ -10,7 +10,7 @@ function App() {
           <Search />
         </header>
 
-        <footer>
+        <footer className="Footer">
           {" "}
           <p>
             <a
@@ -20,7 +20,6 @@ function App() {
             >
               Open-sourced code
             </a>{" "}
-            <br />
             by Rebecca Brodie
           </p>
         </footer>

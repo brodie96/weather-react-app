@@ -18,14 +18,19 @@ export default function Search() {
   return (
     <div className="Search">
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="City" onChange={updateCity} />
-        <input type="submit" value="Search" />
+        <input
+          type="text"
+          placeholder="City"
+          className="SearchCity"
+          onChange={updateCity}
+        />
+        <input type="submit" value="Go!" className="GoButton" />
       </form>
       <h1>City, Country</h1>
-      <ul>
-        <li>Day, Time</li>
-      </ul>
-      <h2>{weather}</h2>
+
+      <h2>Day, Time</h2>
+
+      <h3>{weather}</h3>
     </div>
   );
 }
