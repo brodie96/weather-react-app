@@ -1,1 +1,4 @@
-
+.row {
+  color: var(--main-font-color);
+  font-family: var(--main-font-family);
+}
